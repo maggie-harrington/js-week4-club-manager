@@ -8,12 +8,19 @@
 
 ## Description
 
-##### An Angular CLI application written in TypeScript that allows the user to manage the member list of a hiking club. The user can:
+##### An Angular CLI application written in TypeScript that allows the user/administrator to view/manage the member list of a hiking club.
+
+##### The user can:
 * visit a page to see a list of all club members
 * click a club member's entry in the list to visit their profile page, which includes more details about them
 * visit an "About" page that explains what the club is, and what they do
 * filter the list of users by their particular role in the group, or some other information/category
-* add new users to the club, edit existing user profiles, or delete users (all data is persisted in a database)
+
+##### In addition, the administrator can:
+* add new users to the club
+* Edit existing user profiles
+* Delete users
+* All changes to data is persisted in a database
 
 
 ##### This project demonstrates the following skills:
@@ -27,6 +34,8 @@
 * Ability to create, edit, and delete instances of a model, persisting all changes in Firebase
 * Use of two-way data binding in an edit/update form
 * Use of TypeScript with defined data types
+
+Please see PLANNING.md in the root level of the project folder if you would like additional details on my process in creating this project.
 
 
 ## Setup/Installation Requirements
