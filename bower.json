@@ -1,0 +1,20 @@
+{
+  "name": "club-manager",
+  "description": "An Angular CLI application written in TypeScript that allows the user to manage the member list of a hiking club.",
+  "main": "",
+  "authors": [
+    "Maggie Harrington <maggie.harrington@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/maggie-harrington/js-week4-club-manager",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
