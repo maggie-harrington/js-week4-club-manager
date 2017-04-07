@@ -22,8 +22,9 @@ Add container in app.component.html to make sure bootstrap is installed correctl
 * Create 'app.routing'
 * Create 'welcome' component
 * Create 'about' component and route
+* Create navbar
 * Create 'members' component and route
-* Create 'member.model', including name, date joined, miles hiked, and additional info
+* Create 'member.model', including name, date joined, transportation status, and additional info
 * Create 'member.service' to share data between components
 * Create json file with sample firebase data
 * Set up firebase and upload data
