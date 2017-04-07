@@ -29,4 +29,9 @@ export class MemberProfileService {
                                   transportationStatus: localUpdatedMember.transportationStatus,
                                   additionalInfo: localUpdatedMember.additionalInfo});
   }
+
+  deleteMember(localMemberToDelete){
+    var memberEntryInFirebase = this.getMemberById(localMemberToDelete.$key);
+    memberEntryInFirebase.remove();
+  }
 }

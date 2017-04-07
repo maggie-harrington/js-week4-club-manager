@@ -16,8 +16,10 @@
   <option value="other">other</option>
 </select><br>
 
-<label>Edit Additional Info:</label>
-<input [(ngModel)]="selectedMember.additionalInfo">
+<label>Edit Additional Info:</label><br>
+<textarea [(ngModel)]="selectedMember.additionalInfo"></textarea>
 <br><br>
 
-<button (click)="beginUpdatingMember(selectedMember)">Update</button><br>
+<button (click)="beginUpdatingMember(selectedMember)">Update</button>
+<hr>
+<button (click)="beginDeletingMember(selectedMember)">Delete</button>
