@@ -1,3 +1,38 @@
-<p>
-  admin works!
-</p>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Add New Member</h3>
+  </div>
+  <div class="panel-body">
+    <div>
+      <div>
+        <label>Member Name:</label>
+        <br>
+        <input #newName>
+      </div><br>
+
+      <div>
+        <label>Date Joined:</label>
+        <br>
+        <input type="date" #newJoined>
+      </div><br>
+
+      <div>
+        <label>Transportation Status:</label>
+        <br>
+        <select #newTransportation>
+          <option default value="has car">has car</option>
+          <option value="needs ride">needs ride</option>
+          <option value="other">other</option>
+        </select>
+      </div><br>
+
+      <div>
+        <label>Additional Info:</label>
+        <br>
+        <textarea #newInfo></textarea>
+      </div><br>
+
+      <button (click)="submitForm(newName.value, newJoined.value, newTransportation.value, newInfo.value); newName.value=''; newJoined.value=''; newInfo.value=''">Add</button>
+    </div>
+  </div>
+</div>
