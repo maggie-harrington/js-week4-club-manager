@@ -1,0 +1,23 @@
+<h4>Edit Member Profile</h4>
+
+<label>Edit Member Name:</label>
+<input [(ngModel)]="selectedMember.name">
+<br>
+
+<label>Edit Date Joined:</label>
+<input [(ngModel)]="selectedMember.dateJoined">
+<br>
+
+<label>Edit Transportation Status:</label>
+<br>
+<select [(ngModel)]="selectedMember.transportationStatus">
+  <option value="has car">has car</option>
+  <option value="needs ride">needs ride</option>
+  <option value="other">other</option>
+</select><br>
+
+<label>Edit Additional Info:</label>
+<input [(ngModel)]="selectedMember.additionalInfo">
+<br><br>
+
+<button (click)="beginUpdatingMember(selectedMember)">Update</button><br>

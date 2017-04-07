@@ -32,7 +32,7 @@ Add container in app.component.html to make sure bootstrap is installed correctl
 * Create 'member-profile' component and dynamic route to display individual info
 * Create 'admin' component and route
 * Create form to add new users on 'admin' component/route
-* Create 'edit' component with form to edit user profiles on 'admin' route
-* Create delete button on 'edit' component/ 'admin' route
-* Create custom pipe to filter user data by miles hiked
+* Create 'edit-member' component with form to edit user profiles on 'admin' route
+* Create delete button on 'edit-member' component/ 'admin' route
+* Create custom pipe to filter user data by transportation status
 * CSS styling (if time allows)

@@ -1,8 +1,14 @@
 <h3>Member List</h3><br>
 
-<div *ngFor="let member of members | async" (click)="goToDetailPage(member)" class="panel panel-default">
+<div *ngFor="let member of members | async" class="panel panel-default">
   <div class="panel-body">
-    <h4 class="member-link">{{member.name}}</h4>
+    <h4 (click)="goToDetailPage(member)" class="member-link">{{member.name}}</h4>
     <h5>Member since: {{member.dateJoined}}</h5>
+    <div class="" *ngIf="currentRoute === '/admin'">
+      Transportation: {{member.transportationStatus}}<br>
+      Info: {{member.additionalInfo}}<br>
+      <hr>
+      <app-edit-member [selectedMember]="member"></app-edit-member>
+    </div>
   </div>
 </div>
