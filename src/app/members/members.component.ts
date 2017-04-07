@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MemberProfile } from '../member-profile.model';
 
 @Component({
   selector: 'app-members',
