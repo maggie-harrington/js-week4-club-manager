@@ -1,0 +1,8 @@
+<h3>Member Profile</h3><br>
+
+<div class="well">
+  <h4>{{(memberToDisplay | async)?.name}}</h4><br>
+  <p><strong>Member Since:</strong> {{(memberToDisplay | async)?.dateJoined}}</p>
+  <p><strong>Additional Info:</strong> {{(memberToDisplay | async)?.additionalInfo}}</p>
+  <p><strong>Transportation Status:</strong> {{(memberToDisplay | async)?.transportationStatus}}</p>
+</div>

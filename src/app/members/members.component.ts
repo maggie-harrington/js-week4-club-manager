@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MemberProfile } from '../member-profile.model';
 import { MemberProfileService } from '../member-profile.service';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-members',
@@ -13,10 +14,14 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 export class MembersComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
 
-  constructor(private memberProfileService: MemberProfileService) { }
+  constructor(private memberProfileService: MemberProfileService, private router: Router) { }
 
   ngOnInit() {
     this.members = this.memberProfileService.getMembers();
   }
+
+  goToDetailPage(clickedMember) {
+   this.router.navigate(['members', clickedMember.$key]);
+ };
 
 }

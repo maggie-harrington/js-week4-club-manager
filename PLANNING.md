@@ -29,8 +29,7 @@ Add container in app.component.html to make sure bootstrap is installed correctl
 * Create json file with sample firebase data
 * Set up firebase and upload data
 * Display firebase data on 'members' page
-* Create 'member-profile' component
-* Create dynamic route to display individual info on 'member-profile'
+* Create 'member-profile' component and dynamic route to display individual info
 * Create 'admin' component and route
 * Create form to add new users on 'admin' component/route
 * Create 'edit' component with form to edit user profiles on 'admin' route
