@@ -8,7 +8,7 @@ export class MemberProfileService {
   constructor() { }
 
   getMembers() {
-    return members;
+    return this.members;
   }
 
 }

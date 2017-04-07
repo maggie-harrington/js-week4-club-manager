@@ -1,0 +1,34 @@
+{
+  "members": [
+    {
+      "name": "Maggie",
+      "dateJoined": "03-22-2012",
+      "transportationStatus": "needs ride",
+      "additionalInfo": "Founder. Experienced hiker."
+    },
+    {
+      "name": "Kara",
+      "dateJoined": "04-30-2012",
+      "transportationStatus": "has car",
+      "additionalInfo": "Founder. Experienced hiker."
+    },
+    {
+      "name": "Daisy",
+      "dateJoined": "06-15-2015",
+      "transportationStatus": "has car",
+      "additionalInfo": "Can transport 3 passengers. Intermediate hiker. New to area. "
+    },
+    {
+      "name": "Laura",
+      "dateJoined": "01-09-2016",
+      "transportationStatus": "needs ride",
+      "additionalInfo": "New to area. Beginning hiker."
+    },
+    {
+      "name": "Erica",
+      "dateJoined": "01-02-2017",
+      "transportationStatus": "needs ride",
+      "additionalInfo": "Can transport 4 passengers. Beginning hiker. Recovering from injury."
+    }
+  ]
+}
