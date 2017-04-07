@@ -1,5 +1,8 @@
 <h3>Member List</h3><br>
 
-<p>
-  Members will be displayed here soon!
-</p>
+<div *ngFor="let member of members | async" (click)="goToDetailPage(member)" class="panel panel-default">
+  <div class="panel-body">
+    <h4>{{member.name}}</h4>
+    <h5>Member since: {{member.dateJoined}}</h5>
+  </div>
+</div>

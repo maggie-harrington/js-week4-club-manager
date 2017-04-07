@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MemberProfile } from '../member-profile.model';
 import { MemberProfileService } from '../member-profile.service';
+import { AngularFire, FirebaseListObservable } from 'angularfire2';
 
 @Component({
   selector: 'app-members',
@@ -10,7 +11,7 @@ import { MemberProfileService } from '../member-profile.service';
 })
 
 export class MembersComponent implements OnInit {
-  members: MemberProfile[];
+  members: FirebaseListObservable<any[]>;
 
   constructor(private memberProfileService: MemberProfileService) { }
 
