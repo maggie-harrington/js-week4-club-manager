@@ -8,6 +8,7 @@ import { MemberProfileService } from '../member-profile.service';
   styleUrls: ['./edit-member.component.css'],
   providers: [MemberProfileService]
 })
+
 export class EditMemberComponent implements OnInit {
   @Input() selectedMember;
 

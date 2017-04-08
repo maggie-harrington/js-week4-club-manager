@@ -10,10 +10,11 @@
   <div class="panel-body">
     <h4 (click)="goToDetailPage(member)" class="member-link">{{member?.name}}</h4>
     <h5>Member since: {{member?.dateJoined}}</h5>
+
     <div class="" *ngIf="currentRoute === '/admin'">
-      Transportation: {{member?.transportationStatus}}<br>
-      Info: {{member?.additionalInfo}}<br>
-      <hr>
+      <p><strong>Transportation:</strong> {{member?.transportationStatus}}<p>
+      <p><strong>Info:</strong> {{member?.additionalInfo}}</p><hr>
+
       <app-edit-member [selectedMember]="member"></app-edit-member>
     </div>
   </div>

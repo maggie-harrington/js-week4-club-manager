@@ -9,6 +9,7 @@ import { MemberProfileService } from '../member-profile.service';
   styleUrls: ['./admin.component.css'],
   providers: [MemberProfileService]
 })
+
 export class AdminComponent implements OnInit {
 
   constructor(private memberService: MemberProfileService) { }
@@ -16,7 +17,12 @@ export class AdminComponent implements OnInit {
   ngOnInit() {
   }
 
-  submitForm(name: string, dateJoined: string, transportationStatus: string, additionalInfo:string) {
+  submitForm(
+    name: string,
+    dateJoined: string,
+    transportationStatus: string,
+    additionalInfo:string
+  ) {
     var newMember: MemberProfile = new MemberProfile(name, dateJoined, transportationStatus, additionalInfo);
     this.memberService.addMember(newMember);
   }

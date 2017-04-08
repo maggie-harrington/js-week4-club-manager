@@ -13,6 +13,7 @@ import { FirebaseObjectObservable } from 'angularfire2';
   styleUrls: ['./member-profile.component.css'],
   providers: [MemberProfileService]
 })
+
 export class MemberProfileComponent implements OnInit {
   memberId: string;
   memberToDisplay;
@@ -25,9 +26,8 @@ export class MemberProfileComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
-     this.memberId = urlParameters['id'];
-   });
-   this.memberToDisplay = this.memberProfileService.getMemberById(this.memberId);
+      this.memberId = urlParameters['id'];
+    });
+    this.memberToDisplay = this.memberProfileService.getMemberById(this.memberId);
   }
-
 }
