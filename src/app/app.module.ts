@@ -13,6 +13,7 @@ import { AngularFireModule } from 'angularfire2';
 import { MemberProfileComponent } from './member-profile/member-profile.component';
 import { AdminComponent } from './admin/admin.component';
 import { EditMemberComponent } from './edit-member/edit-member.component';
+import { TransportationFilterPipe } from './transportation-filter.pipe';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -29,7 +30,8 @@ export const firebaseConfig = {
     MembersComponent,
     MemberProfileComponent,
     AdminComponent,
-    EditMemberComponent
+    EditMemberComponent,
+    TransportationFilterPipe
   ],
   imports: [
     BrowserModule,

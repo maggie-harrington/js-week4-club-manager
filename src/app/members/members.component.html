@@ -1,12 +1,18 @@
 <h3>Member List</h3><br>
 
-<div *ngFor="let member of members | async" class="panel panel-default">
+<select (change)="onChange($event.target.value)">
+  <option value="allMembers">All members</option>
+  <option value="hasCar">Members with car</option>
+  <option value="needsRide">Members needing ride</option>
+</select><br><br><br>
+
+<div *ngFor="let member of members | async | transportationFilter:rideFilter" class="panel panel-default">
   <div class="panel-body">
-    <h4 (click)="goToDetailPage(member)" class="member-link">{{member.name}}</h4>
-    <h5>Member since: {{member.dateJoined}}</h5>
+    <h4 (click)="goToDetailPage(member)" class="member-link">{{member?.name}}</h4>
+    <h5>Member since: {{member?.dateJoined}}</h5>
     <div class="" *ngIf="currentRoute === '/admin'">
-      Transportation: {{member.transportationStatus}}<br>
-      Info: {{member.additionalInfo}}<br>
+      Transportation: {{member?.transportationStatus}}<br>
+      Info: {{member?.additionalInfo}}<br>
       <hr>
       <app-edit-member [selectedMember]="member"></app-edit-member>
     </div>
